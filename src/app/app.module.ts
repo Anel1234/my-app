@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
+import { CanvasComponent } from './canvas/canvas.component';
 // import {MatButtonModule, MatCheckboxModule, MatGridListModule, MatInputModule, MatIconModule, MatFormField} from '@angular/material';
 // import * as angular from 'angular';
 // import { AuthService } from 'src/app/auth/auth.service'
@@ -12,7 +13,8 @@ import { HttpModule } from '@angular/http';
 @NgModule({
   declarations: [
     UserComponent,
-    AppComponent
+    AppComponent,
+    CanvasComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,5 @@
 export class User {
-    _id: string;
-    userName: string;
-    notifications: [{
-        notification: string;
-    }];
+    userName: String;
+    versionKey: false;
+    images: [{ data: Buffer, contentType: String }];
 }

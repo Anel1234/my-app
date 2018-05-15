@@ -6,6 +6,14 @@
 <div class="">
   <div *ngFor="let user of userList" class="">
     {{user.userName}}
-    <p>{{user.notifications}}</p>
+    <!-- <p>{{user.notifications[0]}}</p> -->
   </div>
+  <!-- <div>
+    <select class="form-control" id="power" required>
+      <option *ngFor="let user of userlist" [value]="user.userName">{{user.userName}}</option>
+    </select>
+  </div> -->
+  <!-- <input type="text" class="form-control" id="name"
+       required
+       [(ngModel)]="user.userName" name="name"> -->
 </div>

@@ -27,4 +27,11 @@ export class DataService {
       map( res => res.json()));
   }
 
+  addImage(newUser) {
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('http://localhost:8080/api/user', newUser, { headers: headers }).pipe(
+      map( res => res.json()));
+  }
+
 }
