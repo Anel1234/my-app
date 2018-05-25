@@ -10,20 +10,28 @@ import { User } from '../user';
 })
 export class UserComponent implements OnInit {
 
-  userList: User[] = [];
+  userList = [];
+  notifications = [];
 
   constructor(private dataService: DataService) { }
 
   getUsers() {
     this.dataService.getUsers()
       .subscribe( items => {
-        this.userList = items;
-        console.log('data from dataservice: ' + this.userList[0]);
+        this.userList = items.users;
+      });
+  }
+
+  getNotifications() {
+    this.dataService.getNotifications()
+      .subscribe( items => {
+        this.notifications = items.Notifications;
       });
   }
 
   ngOnInit() {
     this.getUsers();
+    this.getNotifications();
   }
 
 }

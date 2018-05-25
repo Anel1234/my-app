@@ -6,21 +6,38 @@ import { UserComponent } from './user/user.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
 import { CanvasComponent } from './canvas/canvas.component';
-// import {MatButtonModule, MatCheckboxModule, MatGridListModule, MatInputModule, MatIconModule, MatFormField} from '@angular/material';
-// import * as angular from 'angular';
-// import { AuthService } from 'src/app/auth/auth.service'
+import { SidenavComponent } from './sidenav/sidenav.component';
+import {
+  MatToolbarModule,
+  MatTableModule,
+  MatIconModule,
+  MatBadgeModule,
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatSidenavModule,
+  MatTabsModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
     UserComponent,
     AppComponent,
-    CanvasComponent
+    CanvasComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    HttpModule
+    HttpModule,
+    MatToolbarModule,
+    MatTableModule,
+    MatIconModule,
+    MatBadgeModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatSidenavModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

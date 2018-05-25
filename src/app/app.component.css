@@ -1,0 +1,27 @@
+app-canvas{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    display: none;
+    left: 100px;
+}
+
+app-sidenav{
+    height: 100%;
+    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lightgray;
+    /* border: 1px solid lightslategray; */
+}
+
+app-user{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    left: 100px;
+}

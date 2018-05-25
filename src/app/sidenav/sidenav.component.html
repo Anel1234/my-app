@@ -1,0 +1,93 @@
+<!-- <div>
+  <mat-sidenav-container class="sideNav">
+    <div>
+    <button mat-button color="primary" (mouseenter)="over()" (mouseleave)="leave()" (click)="iconClick()">
+      <mat-icon>home</mat-icon>
+    </button>
+  </div>
+<div>
+    <button mat-button color="primary" (mouseover)="over()" (mouseleave)="leave()" (click)="iconClick()">
+      <mat-icon matBadge="{{notifications.length}}" matBadgeColor="accent" matBadgePosition="above after">notifications</mat-icon>
+    </button>
+  </div>
+<div>
+    <button mat-button color="primary" (mouseover)="over()" (mouseleave)="leave()" (click)="iconClick()">
+      <mat-icon>save</mat-icon>
+    </button>
+  </div>
+    <button mat-raised-button color="primary"
+        matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+        Action
+      </button>
+      <button mat-raised-button color="primary"
+        matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+        Action
+      </button>
+  </mat-sidenav-container>
+  <div class="sidemenu">
+      helloooo
+    </div>
+</div> -->
+
+<ul id="navBar">
+  <li>
+    <button mat-button color="primary" (mouseenter)="over()" (mouseleave)="leave()" (click)="homeClick()">
+      <mat-icon>home</mat-icon>
+    </button>
+  </li>
+  <li class="notifications">
+    <button mat-button color="primary" (mouseover)="over()" (mouseleave)="leave()" >
+      <mat-icon matBadge="{{notifications.length}}" matBadgeColor="accent" matBadgePosition="above after">notifications</mat-icon>
+      <div class="notificationContent">
+        <a id="notification{{notification.NotificationID}}" (click)="notificationClick(notification.NotificationID, $event)" *ngFor="let notification of notifications">
+          {{notification.Notification}}
+        </a>
+      </div>
+    </button>
+  </li>
+  <li>
+      <button mat-button color="primary" (mouseenter)="over()" (mouseleave)="leave()" (click)="imageClick()">
+        <mat-icon>image</mat-icon>
+      </button>
+    </li>
+</ul>
+
+<!-- <mat-toolbar>  
+    <mat-toolbar-row>
+        <button mat-button color="primary" (click)="iconClick()">
+            <mat-icon>home</mat-icon>
+          </button>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+        <button mat-button color="primary" (click)="iconClick()">
+            <mat-icon>home</mat-icon>
+          </button>
+    </mat-toolbar-row>
+  </mat-toolbar> -->
+
+<!-- <mat-button-toggle-group class="sideNavToggle" vertical #group="matButtonToggleGroup">
+  <mat-button-toggle color="primary" (click)="iconClick()">
+    <mat-icon matBadge="15" matBadgeColor="warn">notifications</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle mat-button-toggle color="primary" (click)="iconClick()">
+    <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+  </mat-button-toggle>
+</mat-button-toggle-group>
+
+<p>
+  <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
+</p>
+
+<p>
+  Button with a badge on the left
+  <button mat-raised-button color="primary"
+  matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+  Action
+</button>
+</p>
+
+<div class="button-row">
+<button mat-icon-button>
+    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+  </button>
+</div> -->

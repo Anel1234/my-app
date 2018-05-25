@@ -11,7 +11,12 @@ export class DataService {
   constructor(private http: Http) { }
 
   getUsers() {
-    return this.http.get('http://localhost:8080/api/users').pipe(
+    return this.http.get('http://localhost:8080/api/Users').pipe(
+      map(res => res.json()));
+  }
+
+  getNotifications() {
+    return this.http.get('http://localhost:8080/api/Notifications').pipe(
       map(res => res.json()));
   }
 
